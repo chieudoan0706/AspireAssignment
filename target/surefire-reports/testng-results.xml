@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Aspire Oddo Test Suite" duration-ms="48925" started-at="2022-03-06T22:52:43 ICT" finished-at="2022-03-06T22:53:32 ICT">
+    <groups>
+    </groups>
+    <test name="Order flow testing" duration-ms="48925" started-at="2022-03-06T22:52:43 ICT" finished-at="2022-03-06T22:53:32 ICT">
+      <class name="com.test.e2e_tests.OrderFlowTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="setUp" is-config="true" duration-ms="9394" started-at="2022-03-06T22:52:43 ICT" finished-at="2022-03-06T22:52:52 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="launchUrl(java.lang.String)[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="launchUrl" duration-ms="4081" started-at="2022-03-06T22:52:52 ICT" finished-at="2022-03-06T22:52:56 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://aspireapp.odoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method status="PASS" signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="login" duration-ms="9622" started-at="2022-03-06T22:52:56 ICT" depends-on-methods="com.test.e2e_tests.OrderFlowTest.launchUrl" finished-at="2022-03-06T22:53:06 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user@aspireapp.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@sp1r3app]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="navigateInventoryFeature()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="navigateInventoryFeature" duration-ms="934" started-at="2022-03-06T22:53:06 ICT" depends-on-methods="com.test.e2e_tests.OrderFlowTest.login" finished-at="2022-03-06T22:53:07 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateInventoryFeature -->
+        <test-method status="PASS" signature="goToProductsPage()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="goToProductsPage" duration-ms="1372" started-at="2022-03-06T22:53:07 ICT" depends-on-methods="com.test.e2e_tests.OrderFlowTest.navigateInventoryFeature" finished-at="2022-03-06T22:53:08 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToProductsPage -->
+        <test-method status="PASS" signature="createNewProduct()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="createNewProduct" duration-ms="16380" started-at="2022-03-06T22:53:08 ICT" depends-on-methods="com.test.e2e_tests.OrderFlowTest.goToProductsPage" finished-at="2022-03-06T22:53:25 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewProduct -->
+        <test-method status="PASS" signature="updateQuantity()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="updateQuantity" duration-ms="1270" started-at="2022-03-06T22:53:25 ICT" depends-on-methods="com.test.e2e_tests.OrderFlowTest.createNewProduct" finished-at="2022-03-06T22:53:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateQuantity -->
+        <test-method status="PASS" signature="clickOnApplicationMenu()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="clickOnApplicationMenu" duration-ms="60" started-at="2022-03-06T22:53:26 ICT" depends-on-methods="com.test.e2e_tests.OrderFlowTest.updateQuantity" finished-at="2022-03-06T22:53:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApplicationMenu -->
+        <test-method status="PASS" signature="clickOnManufacturingIcon()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="clickOnManufacturingIcon" duration-ms="1885" started-at="2022-03-06T22:53:26 ICT" depends-on-methods="com.test.e2e_tests.OrderFlowTest.clickOnApplicationMenu" finished-at="2022-03-06T22:53:28 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnManufacturingIcon -->
+        <test-method status="PASS" signature="createManufactoringOrder()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="createManufactoringOrder" duration-ms="1132" started-at="2022-03-06T22:53:28 ICT" depends-on-methods="com.test.e2e_tests.OrderFlowTest.clickOnManufacturingIcon" finished-at="2022-03-06T22:53:29 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createManufactoringOrder -->
+        <test-method status="PASS" signature="updateManufactoringOrder()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="updateManufactoringOrder" duration-ms="2285" started-at="2022-03-06T22:53:29 ICT" depends-on-methods="com.test.e2e_tests.OrderFlowTest.createManufactoringOrder" finished-at="2022-03-06T22:53:31 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateManufactoringOrder -->
+        <test-method status="PASS" signature="verifyOrderDetails()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="verifyOrderDetails" duration-ms="120" started-at="2022-03-06T22:53:31 ICT" depends-on-methods="com.test.e2e_tests.OrderFlowTest.updateManufactoringOrder" finished-at="2022-03-06T22:53:31 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderDetails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.e2e_tests.OrderFlowTest@50a638b5]" name="tearDown" is-config="true" duration-ms="165" started-at="2022-03-06T22:53:31 ICT" finished-at="2022-03-06T22:53:32 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.e2e_tests.OrderFlowTest -->
+    </test> <!-- Order flow testing -->
+  </suite> <!-- Aspire Oddo Test Suite -->
+</testng-results>

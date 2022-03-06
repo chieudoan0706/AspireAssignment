@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Aspire Oddo Test Suite">
+    <test name="Order flow testing">
+        <parameter name="email" value="user@aspireapp.com"/>
+        <parameter name="password" value="@sp1r3app"/>
+        <parameter name="url" value="https://aspireapp.odoo.com"/>
+        <classes>
+            <class name="com.test.e2e_tests.OrderFlowTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
